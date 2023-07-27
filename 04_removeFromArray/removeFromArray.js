@@ -1,8 +1,5 @@
-const removeFromArray = function (arr) {
+const removeFromArray = function (arr, ...args) {
     let res = [];
-    let args = [];
-
-    for (let i = 1; i < arguments.length; i++) args.push(arguments[i]);
 
     arr.forEach(element => {
         if (!(args.includes(element))) {
