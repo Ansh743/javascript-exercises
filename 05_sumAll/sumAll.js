@@ -1,9 +1,9 @@
 const sumAll = function(start, stop) {
     let sum = 0;
 
-    if(start < 0 | stop < 0) return 'ERROR';
-
     if(!(typeof start === 'number' & typeof stop === 'number')) return 'ERROR';
+
+    if(start < 0 | stop < 0) return 'ERROR';
 
     if(start>stop) [start, stop] = [stop, start];
 
